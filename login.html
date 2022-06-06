@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background: linear-gradient(135deg,#4f7ecc 60%,#8c45ae);
+        }
+        #container{
+            border: 1px solid transparent;
+            width: 25%;
+            /* height: 500px; */
+            margin: 40px auto;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+        #container>h1{
+            margin: 80px 0px 60px 0px;
+        }
+        #container>form>input{
+            width: 85%;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+            /* border: none; */
+        }
+        #submit{
+            background: linear-gradient(135deg,#4f7ecc 60%,#8c45ae);
+            border: none;
+            color: white;
+            font-size: 15px;
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+        span{
+            color: #4f7ecc;
+            font-weight: bold;
+        }
+        p{
+            color: grey;
+        }
+        #container>p:last-child{
+            margin-bottom: 75px;
+        }
+        .border::placeholder{
+            /* border: none; */
+            /* border-style: none; */
+            /* border-bottom: grey; */
+            /* border-radius: 5px; */
+            /* border-color: rebeccapurple; */
+            padding-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Login</h1>
+        <form>
+            <input class="border" type="text" placeholder="Email"><br><br>
+            <input class="border" type="password" placeholder="Password"><br><br>
+            <input id="submit" type="submit" value="Login"><br><br>
+        </form>
+        <p>Forget <span>Password</span>?</p>
+        <p>Don't have an account? <span>Sign Up</span></p>
+    </div>
+</body>
+</html>
